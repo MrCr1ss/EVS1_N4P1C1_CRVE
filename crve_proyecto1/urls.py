@@ -15,7 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from crve_secondApp import views as app2
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('steam/',app2.displayJuego),
+    path('tiempo/',app2.displayTiempo),
 ]

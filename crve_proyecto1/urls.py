@@ -15,7 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from crve_firstApp import views as app1
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('hora/',app1.displayDateTime),
+    path('inacap/',app1.displayHola),
 ]

@@ -16,9 +16,13 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from crve_firstApp import views as app1
+from crve_secondApp import views as app2
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('hora/',app1.displayDateTime),
     path('inacap/',app1.displayHola),
+    path('steam/',app2.displayJuego),
+    path('tiempo/',app2.displayTiempo),
+
 ]
